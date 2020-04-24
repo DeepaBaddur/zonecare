@@ -1,0 +1,110 @@
+
+<ion-content [fullscreen]="true"  class="bg">
+  <h4 class="ion-padding">
+    Coronavirus disease (COVID -19) outbreak situation
+  </h4>
+  <ion-card *ngFor="let item of worldcountdata">
+    <ion-card-header>
+
+      <ion-card-title class="ion-text-center">All Over the World</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-grid class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-chip color="primary">
+              <ion-label>Confirmed Cases : <b>{{item.total_cases }}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+          
+          <ion-col>
+            <ion-chip color="medium">
+              <ion-label>Recovered Percentage : <b>{{item.closed_cases_recovered_percentage | number:'.00'}} %</b></ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="ion-text-center">
+          <ion-col>
+            <ion-chip color="danger">
+              <ion-label>Confirmed Deaths : <b>{{item.death_cases }}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-chip color="secondary">
+              <ion-label>Active Cases : <b>{{item.mild_condition_active_cases }}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-chip color="success">
+              <ion-label>Recovered : <b>{{item.recovered_closed_cases }}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <p>Last Updated: {{item.last_update}} </p>
+      <!-- <p>Source: https://corona.lmao.ninja </p> -->
+
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngFor="let item of Indiacountdata">
+    <ion-card-header>
+
+      <ion-card-title class="ion-text-center"> Country : India</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-grid class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-chip color="primary">
+              <ion-label>Confirmed Cases : <b>{{item.totalconfirmed | number}}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+          
+          <ion-col>
+            <ion-chip color="medium">
+              <ion-label>Today Cases : <b>{{item.dailyconfirmed | number}}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="ion-text-center">
+          <ion-col>
+            <ion-chip color="danger">
+              <ion-label>Confirmed Deaths : <b>{{item.totaldeceased | number}}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+
+
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-chip color="secondary">
+              <ion-label>Today Recovered : <b>{{item.dailyrecovered | number}}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-chip color="success">
+              <ion-label>Recovered : <b>{{item.totalrecovered | number}}</b></ion-label>
+            </ion-chip>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <p>Last Updated: {{item.date | date : 'long'}} </p>
+      <p>Source: https://covid19india.org </p>
+
+
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
