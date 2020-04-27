@@ -36,7 +36,8 @@ Please go through the README.md of respective folders to set up the code.
 - Latest news updates.
 
 -----------------
-## Presentation : [ZoneCare Demo] (https://youtu.be/2077Rval3oc)
+## Presentation : 
+[ZoneCare Demo] (https://youtu.be/2077Rval3oc)
 
 
 
