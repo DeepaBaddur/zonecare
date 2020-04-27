@@ -10,14 +10,13 @@ import { retry, catchError } from 'rxjs/operators';
 export class ApiService {
  
   // API path
-  world_count = 'https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats';
+  world_count = 'https://corona.lmao.ninja/v2/all';
   india_count = 'https://api.covid19india.org/data.json';
   ward_list = ' https://zonecareservices.eu-gb.mybluemix.net/api/wards'; 
   ward_details = ' https://zonecareservices.eu-gb.mybluemix.net/api/covidcounts';
   //ward_details = '../assets/data/warddetails.json';
   //moreservice_list = '../assets/data/moreservices.json';
   moreservice_list = ' https://zonecareservices.eu-gb.mybluemix.net/api/wardservices';
-  pincode = "";
  
   constructor(private http: HttpClient) { }
  
@@ -64,7 +63,6 @@ export class ApiService {
       )
   };
   getWardList(val): Observable<any> {
-    this.pincode = val;
     return this.http
       //.get<any>(this.ward_list+'?pincode_ward='+val)   // comments this line 
        .get<any>(this.ward_list+'/'+val) // un-comments this line for prod
