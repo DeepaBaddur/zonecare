@@ -1,7 +1,6 @@
 # COVID-19 ZoneCare 🏩
 
-Application that allows you to get in touch quickly and easily with people who are need support, in this moment of emergence.
-
+Application that provides fine grained detailed information about COVID-19 count, availability of essential services in users neighborhood area which is known as ward
 
 ## Getting Started
 
