@@ -1,6 +1,8 @@
 # ZoneCare
 An informative application which deals with all the information related to COVID-19. It provides fine grained detailed information about COVID-19 count, availability of essential services in users neighborhood area which is known as ward.
 
+Link to the solution - [ZoneCare](https://covidzonecare.eu-gb.mybluemix.net/)
+
 It consists of two codebases, zoneCareFrontEnd and ovid19zoneCareBackendDeploy.
 
 zoneCareFrontEnd is an Angular application which provides the web interface for ZoneCare and covid19zoneCareBackendDeploy is the Spring boot applcation which provides backend APIs.
