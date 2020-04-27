@@ -37,7 +37,7 @@ Please go through the README.md of respective folders to set up the code.
 
 -----------------
 ## Presentation : 
-[ZoneCare Demo] (https://youtu.be/2077Rval3oc)
+[ZoneCare Demo](https://youtu.be/2077Rval3oc)
 
 
 
